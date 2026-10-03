@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+  </head>
+  <body>
+      <h1 class="title">Hello World!</h1>
+      <p id="rnd">Random value is </p>
+      <script>
+        const div = 1745;
+        const min = Math.ceil(10000 / div);
+        const max = Math.floor(99999999 / div);       
+        const rnd = Math.floor(Math.random() * (max - min + 1) + min);
+        document.getElementById('rnd').innerHTML += rnd * div;
+      </script>
+  </body>
+</html>
